@@ -1,0 +1,151 @@
+<html lang="pt-br">
+    <head>
+        <title>Airbnb</title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="icones/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+
+<!-- Inclua o CSS do roundSlider -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.css" />
+
+<!-- Inclua o JavaScript do roundSlider -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/roundSlider/1.3.2/roundslider.min.js"></script>
+
+
+
+    </head>
+    <header>
+        <div class="cabecalho">
+            <div class="cabecalho-top">
+                <div class="cabecalho-logo">
+                    <img src="img/logo airbnb.png" class="logo"/>
+                </div>
+                <div class="cabecalho-par2">
+                    <span class="texto-header">Acomodações</span> <span class="texto-header">Experiências</span> <span class="texto-header">Experiências online</span>
+                </div>
+                <div class="cabecalho-par3">
+                    <span class="texto-header2">Anuncie seu espaço no Airbnb</span>
+                    <i class="fa-solid fa-globe icones"></i>
+                    <button class="login" id="login"><i class="fa-solid fa-bars menu"></i> <i class="fa-solid fa-circle-user user"></i></button>
+
+                    <div class="menu-suspenso" id="menu-suspenso">
+                        <ul>
+                            <li>Edição de novembro - Atualizações</li>
+                            <li>Entrar</li>
+                            <li>Cartões presentes</li>
+                            <li>Anuncie seu espaço no Airbnb</li>
+                            <li>Central de ajuda</li>
+                        </ul>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="cabecalho-down">
+                <div class="cabecalho-down2">
+
+
+                    <div class="subdiv-downd" id="myDiv">
+                        
+
+
+                        Onde<br>
+                        <input type="text" placeholder="buscar destinos" class="entrada">
+                    </div>
+                    <div class="subdiv-down">
+                        check-in<br>
+                        <input type="date" placeholder="insira as datas" class="entrada" id="calendario">
+                    </div>
+                    <div class="subdiv-down">
+                            check-out<br>
+                            <input type="date" placeholder="insira as datas" class="entrada">
+                    </div>
+                    <div class="subdiv-down">
+                            Quem<br>
+                            <input type="text" placeholder="hospedes?" class="entrada">
+                    </div>
+                            <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <br>
+                            <div id="map" style="display: none;">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.6937055006083!2d-46.64111602386926!3d-23.543516460938385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce58519cff9bc3%3A0x6aa55e7150be1971!2sGaleria%20do%20Rock!5e0!3m2!1spt-BR!2sbr!4v1699972926408!5m2!1spt-BR!2sbr" 
+                                width="1100px" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                    </div>
+                </div>
+            </div>
+            
+         
+        </div>
+        <br>
+    </header>
+    <body>
+        <div class="container-grid">
+            <div class="item-grid"><h4>Em Frente á praia</h4></div>
+            <div class="item-grid"><h4>chalés</h4></div>
+            <div class="item-grid"><h4>No interior</h4></div>
+            <div class="item-grid"><h4>Acampamentos</h4></div>
+            <div class="item-grid"><h4>Vinhedos</h4></div>
+            <div class="item-grid"><h4>Piscinas incriveis</h4></div>
+            <div class="item-grid"><h4>Vistas incriveis</h4></div>
+            <div class="item-grid"><h4>Pousadas</h4></div>
+            <div class="item-grid"><h4>Uau!</h4></div>
+            <div class="item-grid"><h4>Tropical</h4></div>
+            <div class="item-grid"><h4>Fazendas</h4></div>
+            <div class="item-grid"><h4>Casas triangulares</h4></div>
+            <div class="item-grid"><h4>Casas quadradas</h4></div>
+            <div class="item-grid"><h4>Casas circulares</h4></div>
+            <div class="item-grid"><h4>No monte</h4></div>
+            <div class="item-grid"><h4>Exótico</h4></div>
+            <div class="item-grid"><h4>Rústicas</h4></div>
+        </div>
+  <div class="grid-casas">
+    <div class="casa"><img src="https://3.bp.blogspot.com/-TZqqiMnghvY/VwMsAnjXhUI/AAAAAAAAH3Y/z5Cvl8yTmh4TgB-_OFyawHRFKkfR1AX9g/s1600/casa%2Bem%2Bmadeira%2Bclt.png" class="fotos"> 
+        <h2>Casa são paulo</h2>
+        <p>Casa de 2 cômodos localizada no interior de SP</p>
+    </div>
+    <div class="casa"><img src="https://3.bp.blogspot.com/-TZqqiMnghvY/VwMsAnjXhUI/AAAAAAAAH3Y/z5Cvl8yTmh4TgB-_OFyawHRFKkfR1AX9g/s1600/casa%2Bem%2Bmadeira%2Bclt.png" class="fotos"> 
+    <h2>Casa são paulo</h2>
+    <p>Casa de 2 cômodos localizada no interior de SP</p>
+    </div>
+    <div class="casa"><img src="https://3.bp.blogspot.com/-TZqqiMnghvY/VwMsAnjXhUI/AAAAAAAAH3Y/z5Cvl8yTmh4TgB-_OFyawHRFKkfR1AX9g/s1600/casa%2Bem%2Bmadeira%2Bclt.png" class="fotos"> 
+    <h2>Casa são paulo</h2>
+    <p>Casa de 2 cômodos localizada no interior de SP</p>
+    </div>
+    <div class="casa"><img src="https://3.bp.blogspot.com/-TZqqiMnghvY/VwMsAnjXhUI/AAAAAAAAH3Y/z5Cvl8yTmh4TgB-_OFyawHRFKkfR1AX9g/s1600/casa%2Bem%2Bmadeira%2Bclt.png" class="fotos"> 
+    <h2>Casa são paulo</h2>
+    <p>Casa de 2 cômodos localizada no interior de SP</p>
+    </div>
+    <div class="casa"><img src="https://3.bp.blogspot.com/-TZqqiMnghvY/VwMsAnjXhUI/AAAAAAAAH3Y/z5Cvl8yTmh4TgB-_OFyawHRFKkfR1AX9g/s1600/casa%2Bem%2Bmadeira%2Bclt.png" class="fotos"> 
+    <h2>Casa são paulo</h2>
+    <p>Casa de 2 cômodos localizada no interior de SP</p>
+    </div>
+    <div class="casa"><img src="https://3.bp.blogspot.com/-TZqqiMnghvY/VwMsAnjXhUI/AAAAAAAAH3Y/z5Cvl8yTmh4TgB-_OFyawHRFKkfR1AX9g/s1600/casa%2Bem%2Bmadeira%2Bclt.png" class="fotos"> 
+    <h2>Casa são paulo</h2>
+    <p>Casa de 2 cômodos localizada no interior de SP</p>
+    </div>
+    <div class="casa"><img src="https://3.bp.blogspot.com/-TZqqiMnghvY/VwMsAnjXhUI/AAAAAAAAH3Y/z5Cvl8yTmh4TgB-_OFyawHRFKkfR1AX9g/s1600/casa%2Bem%2Bmadeira%2Bclt.png" class="fotos"> 
+    <h2>Casa são paulo</h2>
+    <p>Casa de 2 cômodos localizada no interior de SP</p>
+    </div>
+    <div class="casa"><img src="https://3.bp.blogspot.com/-TZqqiMnghvY/VwMsAnjXhUI/AAAAAAAAH3Y/z5Cvl8yTmh4TgB-_OFyawHRFKkfR1AX9g/s1600/casa%2Bem%2Bmadeira%2Bclt.png" class="fotos"> 
+    <h2>Casa são paulo</h2>
+    <p>Casa de 2 cômodos localizada no interior de SP</p>
+    </div>
+    <div class="casa"><img src="https://3.bp.blogspot.com/-TZqqiMnghvY/VwMsAnjXhUI/AAAAAAAAH3Y/z5Cvl8yTmh4TgB-_OFyawHRFKkfR1AX9g/s1600/casa%2Bem%2Bmadeira%2Bclt.png" class="fotos"> 
+    <h2>Casa são paulo</h2>
+    <p>Casa de 2 cômodos localizada no interior de SP</p>
+    </div>
+    <div class="casa"><img src="https://3.bp.blogspot.com/-TZqqiMnghvY/VwMsAnjXhUI/AAAAAAAAH3Y/z5Cvl8yTmh4TgB-_OFyawHRFKkfR1AX9g/s1600/casa%2Bem%2Bmadeira%2Bclt.png" class="fotos"> 
+    <h2>Casa são paulo</h2>
+    <p>Casa de 2 cômodos localizada no interior de SP</p>
+    </div>
+  </div>
+
+    </body>
+    <script src="/javascrypt/arquivo.js"></script>   
+</html>
